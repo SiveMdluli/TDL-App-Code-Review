@@ -1,0 +1,137 @@
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 600px;
+  height: auto;
+  margin: 5% auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 33px 6px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 0 33px 6px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 33px 6px rgba(0, 0, 0, 0.24);
+}
+
+h1 {
+  font-size: 24px;
+  padding: 11px 11px;
+  border-bottom: 1px solid rgb(80, 80, 78, 0.1);
+}
+
+.add-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgb(80, 80, 78, 0.1);
+}
+
+#new-item-input {
+  border: none;
+  width: 88%;
+  height: 2rem;
+}
+
+#add-item-button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  width: 12%;
+  height: 2rem;
+}
+
+.add-item-container input::placeholder {
+  font-style: italic;
+  font-size: 16px;
+  padding: 5px 5px;
+}
+
+#todo-list {
+  list-style-type: none;
+  margin-left: -2rem;
+  font-size: 16px;
+}
+
+li:first-child {
+  margin-top: -1.2rem;
+}
+
+#todo-list li {
+  padding-top: 1.2rem;
+  border-bottom: 1px solid rgb(80, 80, 78, 0.1);
+  padding-bottom: 0.8rem;
+}
+
+#clear-completed-button {
+  display: flex;
+  justify-content: center;
+  margin-top: -0.9rem;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: medium;
+  color: #bcb7b7;
+}
+
+.fa-ellipsis-v {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.02rem;
+  padding: 1rem -0.5rem;
+  margin-top: -1rem;
+  cursor: pointer;
+}
+
+.task-description {
+  padding-left: 0.3rem;
+}
+
+/* Style the editing area */
+.edit-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-input {
+  flex: 1;
+  margin-right: 8px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.edit-input:focus {
+  outline: none;
+  border-color: #07f;
+  box-shadow: 0 0 0 2px #07f3;
+}
+
+.edit-form button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #07f;
+  color: #fff;
+}
+
+.edit-form button[type="submit"]:hover {
+  background-color: #06c;
+}
+
+.edit-form button[type="button"] {
+  background-color: #fff;
+  color: #333;
+}
+
+.edit-form button[type="button"]:hover {
+  background-color: #f2f2f2;
+}
